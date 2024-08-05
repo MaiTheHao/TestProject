@@ -18,7 +18,7 @@ int main()
     cout<< " Type another number"<<endl;
     cin>>b;
     sum = a + b;
-    cout<< "The sum is: "<<sum<<endl;
+    cout<< "The sum is: "<<sum<<endl;// ljsdfodshofd
 
 
     return 0;
