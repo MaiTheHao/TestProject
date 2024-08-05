@@ -79,7 +79,7 @@ int main()
 {
     srand(time(0));
     User Kien, Thuan;
-    Kien = {"Kien"};
+    Kien = {"Bao"};
     Thuan = {"Thuan"};
 
     User listUsers[] = {Kien, Thuan};
