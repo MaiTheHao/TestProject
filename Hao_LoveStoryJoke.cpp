@@ -78,11 +78,11 @@ void loveStatus(User &user)
 int main()
 {
     srand(time(0));
-    User Hao, Xuan;
-    Hao = {"Hao"};
-    Xuan = {"Xuan"};
+    User Kien, Thuan;
+    Kien = {"Kien"};
+    Thuan = {"Thuan"};
 
-    User listUsers[] = {Hao, Xuan};
+    User listUsers[] = {Kien, Thuan};
     while (true)
     {
         for (User user : listUsers)
