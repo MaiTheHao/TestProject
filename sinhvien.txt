@@ -1,0 +1,3 @@
+Mai Thế Hào; 17; 10; 9; 7
+Nguyễn Thị Mỹ Xuân; 17; 7.0; 9.0; 6.0
+Mai Hoàng Long; 14; 5.0; 6.0; 7.0
