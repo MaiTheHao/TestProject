@@ -78,11 +78,11 @@ void loveStatus(User &user)
 int main()
 {
     srand(time(0));
-    User Kien, Tam;
-    Kien = {"Kien"};
-    Tam = {"Tam"};
+    User Hao, Xuan;
+    Hao = {"Hao"};
+    Xuan = {"Xuan"};
 
-    User listUsers[] = {Kien, Tam};
+    User listUsers[] = {Hao, Xuan};
     while (true)
     {
         for (User user : listUsers)
@@ -99,11 +99,11 @@ int main()
 
         if (static_cast<char>(tolower(answer)) == 'y')
         {
-            listUsers[!round].love_score += 5;
+            listUsers[round].love_score += 5;
         }
         else
         {
-            listUsers[!round].love_score -= 5;
+            listUsers[round].love_score -= 5;
         }
 
         system("cls");
