@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.html": "html",
+        "*.cpp": "cpp",
+        "*.py": "python",
+        "iomanip": "cpp"
+    }
+}
