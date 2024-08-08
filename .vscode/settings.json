@@ -3,6 +3,7 @@
         "*.html": "html",
         "*.cpp": "cpp",
         "*.py": "python",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "iostream": "cpp"
     }
 }
