@@ -18,7 +18,7 @@ p = input(
 )
 b = input("Nhập tên branch mà mi muốn sao lưu hoặc như nãy: ")
 
-Path = "../Backup/Sao_Luu_Du_An_HAOKE.zip" if (p.strip() == "") else p
+Path = "../Sao_Luu_Du_An_HAOKE.zip" if (p.strip() == "") else p
 Branch = "haoke" if (b.strip() == "") else b
 
 run_cmd(f"git archive --format=zip --output {Path} {Branch}")
