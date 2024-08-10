@@ -1,10 +1,17 @@
 /*
-Cấp phát động cho mảng
-Xây dựng chương trình in ra một mảng được nhập vào từ bàn phím
+** Nhập và in mảng số nguyên **
 
-Người dùng nhập vào số phần tử của mảng
-Cấp phát vùng nhớ đủ cho mảng, sau đó người dùng nhập vào các phần tử mảng là các số nguyên
-In mảng ra màn hình (sau mỗi phần tử là một khoảng trắng), sau đó xoá vùng nhớ.
+* **Mô tả:** 
+    - Nhập từ bàn phím kích thước của một mảng số nguyên.
+    - Cấp phát động bộ nhớ cho mảng.
+    - Nhập giá trị cho từng phần tử của mảng.
+    - In ra màn hình các phần tử của mảng, cách nhau bởi một khoảng trắng.
+    - Giải phóng bộ nhớ đã cấp phát.
+
+* **Lưu ý:**
+    - Sử dụng `new` để cấp phát động bộ nhớ cho mảng.
+    - Sử dụng `delete[]` để giải phóng bộ nhớ khi không còn sử dụng.
+    - **Nên kiểm tra xem phép cấp phát bộ nhớ có thành công hay không để tránh lỗi chương trình.**
 */
 
 #include <iostream>
