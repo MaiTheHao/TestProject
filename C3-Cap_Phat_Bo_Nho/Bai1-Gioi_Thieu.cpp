@@ -21,8 +21,8 @@ int main()
     char *sentence = new char[length + 1]; // Cộng thêm 1 để lưu ký tự null '\0' ở cuối chuỗi
 
     cout << "Nhap cau cua ban: ";
-    cin.ignore(); // Bỏ qua ký tự xuống dòng còn sót lại sau khi nhập length
-    cin.getline(sentence, length);
+    cin.ignore(256,'\n'); // Bỏ qua ký tự xuống dòng còn sót lại sau khi nhập length
+    cin.getline(sentence, length + 1);
 
     cout << "Cau cua ban la: " << sentence << endl;
 
@@ -31,12 +31,12 @@ int main()
 
     // Bảng so sánh cấp phát tĩnh và động
     cout << "\nBang so sanh:\n";
-    cout << "--------------------\n";
-    cout << "| Thuoc tinh   | Cap phat tinh   | Cap phat dong   |\n";
-    cout << "|-------------|----------------|----------------|\n";
-    cout << "| Thoi diem    | Bien dich      | Thoi gian chay   |\n";
-    cout << "| Kich thuoc   | Co dinh       | Linh hoat       |\n";
-    cout << "| Quan ly      | Tren ngan xep   | Tren heap       |\n";
+    cout << "|--------------------\n";
+    cout << "| Thuoc tinh   | Cap phat tinh   | Cap phat dong  |\n";
+    cout << "|--------------|-----------------|----------------|\n";
+    cout << "| Thoi diem    | Bien dich       | Thoi gian chay |\n";
+    cout << "| Kich thuoc   | Co dinh         | Linh hoat      |\n";
+    cout << "| Quan ly      | Tren ngan xep   | Tren heap      |\n";
     cout << "|--------------------\n";
 
     return 0;

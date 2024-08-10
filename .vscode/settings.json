@@ -5,6 +5,7 @@
         "*.py": "python",
         "iomanip": "cpp",
         "iostream": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "ostream": "cpp"
     }
 }
