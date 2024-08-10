@@ -1,0 +1,63 @@
+**Bài giảng về Smart Pointer trong C++*-- cung cấp bởi Gemini, theo yêu cầu từ Hào Ke :U
+ĐÂY LÀ BÀI GIẢNG VỀ THỨ CẦN PHẢI ĐẠT ĐƯỢC TRONG TƯƠNG LAI GẦN, HIỆN TẠI CỨ LÀM THEO CÁCH THỦ CÔNG (CÁCH CŨ CỨ NEW RỒI LẠI DELETE)
+
+**Mục tiêu:**
+
+-Hiểu rõ khái niệm smart pointer và vai trò của nó trong quản lý bộ nhớ C++.
+-So sánh smart pointer với con trỏ thông thường.
+-Làm quen với các loại smart pointer phổ biến: `std::unique_ptr`, `std::shared_ptr`, `std::weak_ptr`.
+-Nắm vững cách sử dụng smart pointer trong thực tế.
+
+**1. Giới thiệu**
+
+-**Con trỏ thông thường:**
+    -Là một biến chứa địa chỉ bộ nhớ của một đối tượng.
+    -Cần quản lý bộ nhớ thủ công (new và delete).
+    -Dễ gây ra lỗi rò rỉ bộ nhớ nếu không quản lý cẩn thận.
+-**Smart pointer:**
+    -Là một đối tượng đóng gói một con trỏ thông thường.
+    -Tự động quản lý vòng đời của đối tượng được trỏ tới.
+    -Giúp giảm thiểu lỗi rò rỉ bộ nhớ và tăng tính an toàn của chương trình.
+
+**2. Các loại smart pointer phổ biến**
+<LƯU Ý, SMART POINTER CẦN HEADER <memory>>
+
+-**std::unique_ptr:**
+    -Quyền sở hữu duy nhất: Chỉ có một `unique_ptr` trỏ tới một đối tượng tại một thời điểm.
+    -Tự động giải phóng bộ nhớ khi hết phạm vi.
+    -Không thể sao chép, chỉ có thể chuyển quyền sở hữu.
+-**std::shared_ptr:**
+    -Quyền sở hữu chia sẻ: Nhiều `shared_ptr` có thể trỏ tới cùng một đối tượng.
+    -Sử dụng bộ đếm tham chiếu để quyết định khi nào giải phóng bộ nhớ.
+    -Có thể gây ra vòng tham chiếu nếu không sử dụng cẩn thận.
+-**std::weak_ptr:**
+    -Tham chiếu yếu: Không sở hữu đối tượng, chỉ là một tham chiếu đến một `shared_ptr`.
+    -Thường được sử dụng để phá vỡ vòng tham chiếu.
+
+**3. Ví dụ minh họa**
+    Hãy truy cập file Bai4-Vi_Du.cpp
+**4. So sánh smart pointer với con trỏ thông thường**
+
+|----------------|-------------------------------------------------|----------------------------------|
+|   Tính năng    |             Con trỏ thông thường                |          Smart pointer           |
+|----------------|-------------------------------------------------|----------------------------------|
+| Quản lý bộ nhớ | Thủ công                                        | Tự động                          |
+|----------------|-------------------------------------------------|----------------------------------|
+| Quyền sở hữu   | Nhiều con trỏ có thể trỏ đến cùng một đối tượng | Tùy thuộc vào loại smart pointer |
+|----------------|-------------------------------------------------|----------------------------------|
+| An toàn        | Dễ gây rò rỉ bộ nhớ                             | An toàn hơn                      |
+|----------------|-------------------------------------------------|----------------------------------|
+| Hiệu suất      | Có thể nhanh hơn                                | Có chi phí overhead nhỏ          |
+|----------------|-------------------------------------------------|----------------------------------|
+
+**5. Khi nào nên sử dụng smart pointer?**
+
+-Muốn tránh rò rỉ bộ nhớ.
+-Quản lý vòng đời của đối tượng một cách phức tạp.
+-Chia sẻ quyền sở hữu đối tượng giữa các phần khác nhau của chương trình.
+
+**6. Lưu ý khi sử dụng smart pointer**
+
+-Hiểu rõ sự khác biệt giữa các loại smart pointer.
+-Tránh vòng tham chiếu khi sử dụng `std::shared_ptr`.
+-Sử dụng `std::weak_ptr` để phá vỡ vòng tham chiếu.
