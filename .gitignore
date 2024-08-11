@@ -1,5 +1,6 @@
 # Loại trừ file .exe
 *.exe
+*.zip
 
 # Các dòng loại trừ khác (nếu có)
 # Ví dụ:
