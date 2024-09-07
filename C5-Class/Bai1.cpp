@@ -24,6 +24,12 @@ public:
         this->brand = brand;
         this->price = price;
     }
+    // Cách thức thực hiện khởi tạo nâng cao hơn là sử dụng danh sách khởi tạo
+    /*
+    Car(string brand, unsigned long int price) : brand (brand), price (price) {}
+
+    Bạn nên tìm hiểu về cách hoạt động của cách này, vì nó thường được sử dụng vì tính tiện lợi và hiệu quả.
+    */
 
     // Các hàm getter và setter để truy cập và cập nhật giá trị của các thuộc tính
     string getBrand()
